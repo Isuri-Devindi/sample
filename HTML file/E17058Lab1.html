@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title> Buy T-shirts Online</title>
+	<style>
+		body{
+		background-color: rgba(255,127,80,0.3);
+		background-image: url('petals.gif');
+		background-size:100%100%;
+		background-repeat: no-repeat;
+		background-blend-mode:screen;
+
+  		}
+
+		header{
+		text-align: center;
+		height:300px;
+		background-image: url('tshirt.jpg');
+		background-color: rgba(240,128,128,0.4);
+		background-size:100%100%;
+		background-repeat: no-repeat;
+		background-blend-mode:screen;
+		}
+
+		table{
+		font-family:Arial;
+		border-radius: 18px 18px 18px 18px;
+		background-image: url('feathers.jpg');
+		background-size:cover;
+		background-repeat: no-repeat;
+		width:700px;
+		height:700px;
+		}
+
+		mark{
+		background-color:rgba(255,255,255,0.5);
+		}
+
+		input[type=text],[type=submit],[type=radio]{
+		background-color:rgb(240,128,128);
+		}
+	
+		select{
+		background-color:rgb(240,128,128);
+		}
+
+		textarea{
+		background-color:rgb(240,128,128);
+		}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<br><br><br><br><br>
+		<h1>BUY T-SHIRTS ONLINE</h1>
+		<h2><mark>Fill out the form below and click "Order Now" to order</mark></h2>
+	</header>
+	<div>
+		<br>
+   		<form>
+		<table align="center">
+			
+			<tr>
+				<th>Search by order number:</th>
+				<td><input type="text" name="order number"><input type="submit" value="Search"></td>
+			</tr>
+			<tr>
+				<th>Choose your size:</th>
+				<td><input type="radio" id="small" name="size" value="Small"><label for="small">Small</label>
+				    <input type="radio" id="medium" name="size" value="Medium"><label for="medium">Medium</label>
+				    <input type="radio" id="large" name="size" value="Large"><label for="large">Large</label></td>
+			</tr>
+			<tr>
+				<th >Choose your colour:</th>
+				<td>
+					<select>
+						<option>Red</option>
+						<option>Purple</option>
+						<option>Blue</option>
+						<option>Green</option>			
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Extra Items:</th>
+				<td><input type="checkbox" name="cap" id="cap"><label for="cap">Cap</label>
+				<br><input type="checkbox" name="wband" id="wband"><label for="wband">Wrist Band</label></td>
+			</tr>
+			<tr>
+				<th>Deliver To:</th>
+				<td><label for="fname">First Name: </label><input type="text" name="fname" id="fname">
+				<br><br><label for="lname">Last  Name: </label><input type="text" name="lname" id="lname"> 
+				<br><br><label for="ad1">Address1:&nbsp;&nbsp;&nbsp;</label><input type="text" name="ad1" id="ad1">
+				<br><br><label for="ad2">Address2:&nbsp;&nbsp;&nbsp;</label><input type="text" name="ad2" id="ad2">
+				<br><br><label for="ad3">Address3:&nbsp;&nbsp;&nbsp;</label><input type="text" name="ad3" id="ad3"></td>
+			</tr>
+			
+			<tr>
+				<th>Your Comments:</th>
+				<td><textarea rows="15" name="comments" cols="50"></textarea><br>	
+			       <input type="submit" value="Order Now"></td>
+			</tr>
+			
+		</table>	
+		</form>
+	</div>
+</body>
+</html>
